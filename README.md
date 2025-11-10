@@ -59,7 +59,7 @@
 Este proyecto fue desarrollado como material educativo para estudiantes de BIT +. Si tienes preguntas o sugerencias, no dudes en contactarme.  
 
 - **Autor:** Nicol Murcia Cortes 
-- **GitHub:** [LuisaCastano40](https://github.com/LuisaCastano40)  
-- **LinkedIn:** [Perfil de linkedIn](https://www.linkedin.com/in/luisacastanovanegas/) 
+- **GitHub:** [nicolcortes-angel](https://github.com/nicolcortes-angel)  
+- **LinkedIn:** [Perfil de linkedIn](https://www.linkedin.com/in/nicol-murcia-desarrolloweb-full-tack/) 
 
 ¡Explora los ejemplos y adapta las soluciones a tus propios proyectos!
