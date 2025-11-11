@@ -61,11 +61,11 @@ Este proyecto fue desarrollado como material educativo para estudiantes de BIT +
 ## Taller
 1. Creacion de respositorio
 2. Ejecutar el servidor 
-<img href="/imgs/paso 1.PNG">
+<img src="/imgs/paso 1.PNG">
 3. Prueba ejemplo todos pasan
-<img href="/imgs/paso 2.PNG">
+<img src="/imgs/paso 2.PNG">
 4. Prueba ejemplo 1 falla
-<img href="/imgs/paso 3.PNG">
+<img src="/imgs/paso 3.PNG">
 
 - **Autor:** Nicol Murcia Cortes 
 - **GitHub:** [nicolcortes-angel](https://github.com/nicolcortes-angel)  
