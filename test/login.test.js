@@ -46,6 +46,47 @@ describe("Pruebas de login de usuario", () => {
 
 
 
+     it("No deberia inicar sesion correctamente con credenciales validas, correo invalido", async ()=> {
+   
+    const codedPassword = await bcrypt.hash(testUser.password, 10);
+    await userModel.create({...testUser, password:codedPassword});
+    
+    const response = await supertest(app).post('/iniciarSesion').send({
+           
+        emailLogin: "carolmurciacortes@gmail.com",
+        passwordLogin: "Test1234"
+
+    });
+
+  
+      expect(response.statusCode).toBe(404);
+   
+
+
+    });
+
+
+    it("No deberia inicar sesion correctamente con credenciales validas, contraseña invalida", async ()=> {
+   
+    const codedPassword = await bcrypt.hash(testUser.password, 10);
+    await userModel.create({...testUser, password:codedPassword});
+    
+    const response = await supertest(app).post('/iniciarSesion').send({
+           
+        emailLogin: "nicolmurciacortes@gmail.com",
+        passwordLogin: "Test134"
+
+    });
+
+  
+      expect(response.statusCode).toBe(401);
+   
+
+
+    });
+
+
+
 });  
 
 //conectar a la base de datos antes de las pruebas

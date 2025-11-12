@@ -68,6 +68,8 @@ Este proyecto fue desarrollado como material educativo para estudiantes de BIT +
 <img src="/imgs/paso 3.PNG">
 5. Inicio de Sesion
 <img src="/imgs/paso 4.PNG">
+6. 3 controles de inicio de Sesion
+<img src="/imgs/paso 5.PNG">
 
 - **Autor:** Nicol Murcia Cortes 
 - **GitHub:** [nicolcortes-angel](https://github.com/nicolcortes-angel)  
