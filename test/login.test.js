@@ -2,7 +2,8 @@ import { loginUser } from "../src/controllers/user.controller";
 import supertest from "supertest";
 import mongoose from "mongoose";
 import { userModel } from "../src/models/users.model";
-import bcryptjs from "bcryptjs";
+import bcrypt from "bcryptjs";
+import app from "../app";
 
 
 //2. desarrollar las pruebas
@@ -13,18 +14,39 @@ describe("Pruebas de login de usuario", () => {
         fullName: "Usuario de Prueba",
         email: "nicolmurciacortes@gmail.com",
         password: "Test1234"
-    };
+    }
 
     beforeEach(async () => {
         await userModel.deleteMany({});
-});
+    });
 
     afterAll(async () => {
         await mongoose.connection.close();
     });
+   
     
+    it("deberia inicar sesion correctamente con credenciales validas", async ()=> {
+   
+    const codedPassword = await bcrypt.hash(testUser.password, 10);
+    await userModel.create({...testUser, password:codedPassword});
+    
+    const response = await supertest(app).post('/iniciarSesion').send({
+           
+        emailLogin: "nicolmurciacortes@gmail.com",
+        passwordLogin: "Test1234"
+
+    });
+
+  
+      expect(response.statusCode).toBe(200);
+   
 
 
-} 
-);  //conectar a la base de datos antes de las pruebas
+    });
+
+
+
+});  
+
+//conectar a la base de datos antes de las pruebas
   

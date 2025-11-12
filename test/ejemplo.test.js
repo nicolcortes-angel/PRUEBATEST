@@ -12,7 +12,7 @@ it("caso de prueba suma de numeros positivos", ()=>{
 });
 
 it("caso de prueba suma de numeros ceros", ()=>{
-    expect(suma(6,0)).toBe(7);
+    expect(suma(6,0)).toBe(6);
 });
 
 it("caso de prueba suma de numeros negativos", ()=>{

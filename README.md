@@ -66,6 +66,8 @@ Este proyecto fue desarrollado como material educativo para estudiantes de BIT +
 <img src="/imgs/paso 2.PNG">
 4. Prueba ejemplo 1 falla
 <img src="/imgs/paso 3.PNG">
+5. Inicio de Sesion
+<img src="/imgs/paso 4.PNG">
 
 - **Autor:** Nicol Murcia Cortes 
 - **GitHub:** [nicolcortes-angel](https://github.com/nicolcortes-angel)  
